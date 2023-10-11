@@ -1,4 +1,4 @@
-package com.github.cd721.dlplugin.listeners
+package com.github.cd721.`data-leakage-plugin`.listeners
 
 import com.intellij.openapi.application.ApplicationActivationListener
 import com.intellij.openapi.diagnostic.thisLogger

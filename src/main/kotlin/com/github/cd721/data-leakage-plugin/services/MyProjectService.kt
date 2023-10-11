@@ -1,9 +1,9 @@
-package com.github.cd721.dlplugin.services
+package com.github.cd721.`data-leakage-plugin`.services
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project
-import com.github.cd721.dlplugin.MyBundle
+import com.github.cd721.`data-leakage-plugin`.MyBundle
 
 @Service(Service.Level.PROJECT)
 class MyProjectService(project: Project) {

@@ -1,4 +1,4 @@
-package com.github.cd721.dlplugin
+package com.github.cd721.`data-leakage-plugin`
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

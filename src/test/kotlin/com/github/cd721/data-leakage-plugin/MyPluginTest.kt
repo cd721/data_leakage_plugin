@@ -1,4 +1,4 @@
-package com.github.cd721.dlplugin
+package com.github.cd721.`data-leakage-plugin`
 
 import com.intellij.ide.highlighter.XmlFileType
 import com.intellij.openapi.components.service
@@ -6,7 +6,7 @@ import com.intellij.psi.xml.XmlFile
 import com.intellij.testFramework.TestDataPath
 import com.intellij.testFramework.fixtures.BasePlatformTestCase
 import com.intellij.util.PsiErrorElementUtil
-import com.github.cd721.dlplugin.services.MyProjectService
+import com.github.cd721.`data-leakage-plugin`.services.MyProjectService
 
 @TestDataPath("\$CONTENT_ROOT/src/test/testData")
 class MyPluginTest : BasePlatformTestCase() {

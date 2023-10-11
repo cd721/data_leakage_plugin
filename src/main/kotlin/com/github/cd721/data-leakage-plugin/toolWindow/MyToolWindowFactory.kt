@@ -1,4 +1,4 @@
-package com.github.cd721.dlplugin.toolWindow
+package com.github.cd721.`data-leakage-plugin`.toolWindow
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.thisLogger
@@ -8,8 +8,8 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
-import com.github.cd721.dlplugin.MyBundle
-import com.github.cd721.dlplugin.services.MyProjectService
+import com.github.cd721.`data-leakage-plugin`.MyBundle
+import com.github.cd721.`data-leakage-plugin`.services.MyProjectService
 import javax.swing.JButton
 
 
