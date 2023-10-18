@@ -1,4 +1,4 @@
-package com.github.cd721.`data-leakage-plugin`.toolWindow
+package com.github.cd721.data_leakage_plugin.toolWindow
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.thisLogger
