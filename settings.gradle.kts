@@ -1,1 +1,1 @@
-rootProject.name = "data-leakage-plugin"
+rootProject.name = "data_leakage_plugin"

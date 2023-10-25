@@ -8,8 +8,8 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
-import com.github.cd721.`data-leakage-plugin`.MyBundle
-import com.github.cd721.`data-leakage-plugin`.services.MyProjectService
+import com.github.cd721.data_leakage_plugin.MyBundle
+import com.github.cd721.data_leakage_plugin.services.MyProjectService
 import javax.swing.JButton
 
 

@@ -1,18 +1,31 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.cd721.data-leakage-plugin</id>
+    <!--    See https://github.com/JetBrains/intellij-sdk-code-samples/blob/main/product_specific/pycharm_basics/src/main/resources/META-INF/plugin.xml-->
+    <!--Unique id for this plugin. Must stay constant for the life of the plugin. -->-->
+    <id>com.github.cd721.data_leakage_plugin</id>
     <name>Data Leakage Detector</name>
+
+    <!-- Text to display as company information on Settings | Plugin page -->
     <vendor>cd721</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.python</depends>
+    <depends>com.intellij.modules.python-core-capable</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.cd721.data_leakage_plugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow factoryClass="com.github.cd721.data_leakage_plugin.toolWindow.MyToolWindowFactory"
+                    id="MyToolWindow"/>
+
+        <postStartupActivity implementation="com.github.cd721.data_leakage_plugin.listeners.MyPostStartupActivity"/>
+        <lang.inspectionSuppressor language="Python"
+                                   implementationClass="com.github.cd721.data_leakage_plugin.FlakeInspectionSuppressor"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.cd721.data_leakage_plugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+        <listener class="com.github.cd721.data_leakage_plugin.listeners.MyApplicationActivationListener"
+                  topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
 </idea-plugin>
