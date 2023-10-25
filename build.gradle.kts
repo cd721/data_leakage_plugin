@@ -36,7 +36,7 @@ intellij {
     pluginName = properties("pluginName")
     version = properties("platformVersion")
 //    type = properties("platformType")
-    type = "PC"
+    type = "PY"
     // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file.
     plugins = properties("platformPlugins").map { it.split(',').map(String::trim).filter(String::isNotEmpty) }
 }
