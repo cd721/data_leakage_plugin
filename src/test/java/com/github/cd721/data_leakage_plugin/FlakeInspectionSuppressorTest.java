@@ -35,12 +35,10 @@ public class FlakeInspectionSuppressorTest extends LightPlatformCodeInsightFixtu
             myFixture.enableInspections(i);
         }
 
-
         //language=Python
         assertNoErrors("def foo():\n    x = l # noqa");
         //language=Python
         assertNoErrors("# flake8: noqa\ndef foo():\n   x = 1 # n");
-
     }
 
     //Use a fixture to talk to the headless IDE

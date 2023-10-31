@@ -27,5 +27,8 @@
     <applicationListeners>
         <listener class="com.github.cd721.data_leakage_plugin.listeners.MyApplicationActivationListener"
                   topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+            <listener
+                    class="com.github.cd721.data_leakage_plugin.listeners.FileChangeDetector"
+                    topic="com.intellij.openapi.vfs.newvfs.BulkFileListener"/>
     </applicationListeners>
 </idea-plugin>
